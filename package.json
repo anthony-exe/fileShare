@@ -1,0 +1,23 @@
+{
+  "name": "fileshare",
+  "version": "1.0.0",
+  "description": "A simple single page file sharing application.",
+  "main": "fileShare.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthony-exe/fileShare.git"
+  },
+  "keywords": [
+    "Share",
+    "file"
+  ],
+  "author": "anthony-exe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthony-exe/fileShare/issues"
+  },
+  "homepage": "https://github.com/anthony-exe/fileShare#readme"
+}
