@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/anthony-exe/fileShare/issues"
   },
-  "homepage": "https://github.com/anthony-exe/fileShare#readme"
+  "homepage": "https://github.com/anthony-exe/fileShare#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
