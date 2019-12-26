@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/anthony-exe/fileShare#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "normalize.css": "^8.0.1"
   }
 }
