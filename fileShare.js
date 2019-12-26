@@ -9,12 +9,7 @@ let app = express();
 app.set('port', process.env.PORT || PORT);
 app.use(express.static(__dirname + '/public'));
 
-//--------------------- Routes -------------------------
-
-//Home Page
-app.get('/', function(req, res) {
-    res.sendFile('/views/index.html', {root: __dirname});
-});
+//--------------------- Routes ------------------------
 
 //Send normalize file. (need to find better way to)
 app.get('/normalize.css', function(req, res) {
