@@ -1,12 +1,25 @@
 //imports
-var express = require('express');
+let express = require('express');
 
 //global constants
 const PORT = 3000;
 
 //Setup Express
-var app = express();
+let app = express();
 app.set('port', process.env.PORT || PORT);
+app.use(express.static(__dirname + '/public'));
+
+//--------------------- Routes -------------------------
+
+//Home Page
+app.get('/', function(req, res) {
+    res.sendFile('/views/index.html', {root: __dirname});
+});
+
+//Send normalize file. (need to find better way to)
+app.get('/normalize.css', function(req, res) {
+    res.sendFile('node_modules/normalize.css/normalize.css', {root: __dirname});
+});
 
 //Custom 404 Page
 app.use(function(req, res) {
