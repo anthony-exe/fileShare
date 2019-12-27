@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 //--------------------- Routes ------------------------
 
 //Send normalize file. (need to find better way to)
-app.get('/normalize.css', function(req, res) {
+app.get('/style/normalize.css', function(req, res) {
     res.sendFile('node_modules/normalize.css/normalize.css', {root: __dirname});
 });
 
