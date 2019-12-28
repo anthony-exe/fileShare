@@ -1,5 +1,6 @@
 //imports
 let express = require('express');
+let formidable = require('formidable');
 
 //global constants
 const PORT = 3000;
@@ -14,6 +15,21 @@ app.use(express.static(__dirname + '/public'));
 //Send normalize file. (need to find better way to)
 app.get('/style/normalize.css', function(req, res) {
     res.sendFile('node_modules/normalize.css/normalize.css', {root: __dirname});
+});
+
+//Handle file upload
+app.post('/upload-file', function(req, res) {
+    var form = new formidable.IncomingForm();
+    form.uploadDir = __dirname + "/uploads";
+    form.keepExtensions = true;
+    form.parse(req, function(err, fields, files) {
+        if(err) {
+            return res.redirect(303, '/error');
+        }
+        console.log(`Received files: ${files}`);
+        console.log(`Received fields: ${fields}`);
+        res.send('It worked');
+    });
 });
 
 //Custom 404 Page
