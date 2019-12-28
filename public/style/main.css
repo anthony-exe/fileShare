@@ -5,9 +5,3 @@
 h1, h2 {
     font-weight:    300;
 }
-
-#mainForm {
-    border-radius:  20px;
-    height:         60vh;
-    margin:         20vh 0 20vh 0;
-}

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>fileShare...</title>
         <link rel="stylesheet" href="/style/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="/style/materialize.min.css">
         <link rel="stylesheet" href="/style/main.css">
     </head>
@@ -17,8 +18,19 @@
         </nav>
 
         <div class="container">
-            <div class="row">
-                <h2 class="center-align">Upload a file</h2>
+            <div class="row center-align">
+                <h2>Upload a file</h2>
+                <form action="/upload-file" method="POST" id="upload-form">
+                    <div class="form-section">
+                        <input type="file" name="file">
+                    </div>
+                    <div class="form-section">
+                        <button type="submit" class="btn" name="action">
+                            Upload
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
         
