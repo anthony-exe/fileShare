@@ -9,13 +9,19 @@ function handleUploadFormSubmit(event) {
     let uploadForm = document.querySelector('#upload-form');
     let formData = new FormData(uploadForm);
     console.log(formData);
-    fetch('/upload-file', {
-        method: 'POST',
-        body: formData,
-        mode: 'same-origin'
-    }).then(function(response) {
-        console.log(response);
-    }).catch(function(error) {
-        console.error(`Error: ${error}`);
-    });
+
+    let xhr = new XMLHttpRequest();
+
+    xhr.onload = function() {
+        if(xhr.status === 200) {
+            console.log('Success: ' + xhr.responseText);
+        }
+    };
+
+    xhr.onerror = function() {
+        console.log('Something went wrong: ');
+    };
+
+    xhr.open('POST', '/upload-file');
+    xhr.send(formData);
 }
