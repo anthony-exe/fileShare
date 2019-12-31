@@ -23,9 +23,11 @@ app.post('/upload-file', function(req, res) {
     form.uploadDir = __dirname + "/uploads";
     form.keepExtensions = true;
     form.parse(req, function(err, fields, files) {
+
         if(err) {
             return res.redirect(303, '/error');
         }
+
         console.log(`Received files: ${files}`);
         console.log(`Received fields: ${fields}`);
         res.send('It worked');
