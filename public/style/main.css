@@ -1,3 +1,16 @@
+html, body, .main-section, .main-section > div {
+    height:         100%;
+}
+
+.main-section {
+    display:        flex;
+    flex-flow:      row nowrap;
+}
+
+.main-section > div {
+    width:           50%;
+}
+
 .row {
     margin:         0;
 }
