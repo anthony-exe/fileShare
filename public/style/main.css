@@ -1,25 +1,51 @@
+.hidden {
+    display: none;
+}
+
 html, body, .main-section, .main-section > div {
-    height:         100%;
-}
-
-.main-section {
-    display:        flex;
-    flex-flow:      row nowrap;
-}
-
-.main-section > div {
-    width:           50%;
+    height: 100%;
 }
 
 .row {
-    margin:         0;
+    margin: 0;
 }
 
-h1, h2 {
-    font-weight:    300;
+.main-section {
+    display: flex;
+    flex-flow: row nowrap;
 }
+
+.main-section > div {
+    width: 50%;
+}
+
+.main-section-left, .main-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section-left {
+    min-width: 500px;
+}
+
+.main-content {
+    box-sizing: border-box;
+    width: 75%;
+}
+
+#upload-form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-section {
+    margin-bottom: 25px;
+}
+
 .progress {
-    width:          50%;
-    margin-left:    auto;
-    margin-right:   auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -19,20 +19,24 @@
 
         <section class="main-section">
             <div class="main-section-left deep-purple darken-4 white-text">
-                <h2>Upload a file</h2>
-                <form id="upload-form">
-                    <div class="form-section">
-                        <input type="file" name="file">
+                <div class="main-content">
+                    <h2>fileShare...</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id quam in lectus facilisis aliquet ut sed massa.</p>
+                    <form id="upload-form">
+                        <div class="form-section">
+                            <label for="file">Select a file to share:</label>
+                            <input type="file" name="file">
+                        </div>
+                        <div class="form-section">
+                            <button type="submit" class="btn" name="action">
+                                Upload
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="progress hidden">
+                        <div class="determinate"></div>
                     </div>
-                    <div class="form-section">
-                        <button type="submit" class="btn" name="action">
-                            Upload
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </div>
-                </form>
-                <div class="progress">
-                    <div class="determinate"></div>
                 </div>
             </div>
             <div class="main-section-right"></div>
