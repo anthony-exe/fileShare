@@ -6,6 +6,10 @@ html, body, .main-section, .main-section > div {
     height: 100%;
 }
 
+body {
+    font-size: 18px;
+}
+
 .row {
     margin: 0;
 }
@@ -36,8 +40,7 @@ html, body, .main-section, .main-section > div {
 }
 
 #upload-form {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 .form-section {
@@ -48,4 +51,18 @@ html, body, .main-section, .main-section > div {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.upload-field {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(255, 255, 255, .22);
+    border-radius: 5px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-section {
+    text-align: center;
 }
