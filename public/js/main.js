@@ -2,6 +2,9 @@
 
 window.onload = function() {
     document.querySelector('#upload-form').addEventListener('submit', handleUploadFormSubmit);
+    document.querySelector('.upload-field').addEventListener('click', function() {
+        document.querySelector('input[name="file"]').click();
+    });
 }
 
 function handleUploadFormSubmit(event) {
