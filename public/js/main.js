@@ -1,6 +1,8 @@
 'use strict';
 
-window.onload = function() {
+window.onload = setUpHandlers;
+
+function setUpHandlers() {
     document.querySelector('#upload-form').addEventListener('submit', handleUploadFormSubmit);
     document.querySelector('.upload-field').addEventListener('click', function() {
         document.querySelector('input[name="file"]').click();
